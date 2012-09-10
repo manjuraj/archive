@@ -3,8 +3,8 @@
 + npm install -g express
 + express todoapp
 
+  ```
   express creates the basic skeleton of application for us
-  .
   ├── README.md
   ├── app.js
   ├── package.json
@@ -19,6 +19,7 @@
   └── views
       ├── index.jade
       └── layout.jade
+  ```
 
 + cd todoapp
 + npm install
@@ -27,8 +28,9 @@
 + general template : views/layout.jade
 + create view for every page
 + npm install redis --save
-+ final
-  .
++ after changes
+
+  ```
   ├── README.md
   ├── app.js
   ├── node_modules
@@ -47,3 +49,4 @@
       ├── index.jade
       ├── layout.jade
       └── todo.jade
+  ```
