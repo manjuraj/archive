@@ -4,7 +4,6 @@ import com.google.common.base.Function;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.twitter.dataservices.gen.hamsa.Record;
 
 import java.nio.ByteBuffer;
 import java.util.Collections;
@@ -22,9 +21,6 @@ public final class App {
     }
 
     public static void main(String[] args) {
-
-        Record record = new Record();
-        System.out.println(record);
 
         List<Integer> list = Lists.newArrayList();
 
