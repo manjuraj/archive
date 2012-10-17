@@ -1,11 +1,19 @@
 package com.mycompany.app;
 
-/**
- * Created with IntelliJ IDEA.
- * User: manj
- * Date: 9/13/12
- * Time: 2:08 PM
- * To change this template use File | Settings | File Templates.
- */
+import com.google.common.collect.Lists;
+
+import java.util.List;
+
 public class AppHelper {
+
+    public final List<Integer> intList;
+    public List<String> strList;
+
+    public AppHelper() {
+        intList = Lists.newArrayList();
+    }
+
+    public AppHelper(int size) {
+        intList = Lists.newArrayListWithCapacity(size);
+    }
 }
