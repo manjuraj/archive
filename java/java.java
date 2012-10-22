@@ -41,6 +41,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
+import javax.annotation.Nullable;
+
 import com.twitter.common.collections.Pair;
 
 import com.twitter.util.Duration;
@@ -114,6 +116,7 @@ Set<T> set = Collections.emptySet();
 
 Set<T> list = Collections.singleton(T);
 List<T> list = Collections.singletonList(T);
+Map<K, V> map = Collections.singletonMap(K, V);
 
 List<T> list = new ArrayList<T>();
 List<T> list = new ArrayList<T>(size);
@@ -135,7 +138,7 @@ Comparator<MyClass> comparator = new Comparator<MyClass>() {
       return 1;
     } else {
       return 0;
-    }
+    } 
   }
 };
 
@@ -150,14 +153,16 @@ import ...
 public static class MyObject {}
 public class MyClass {}
 public class MyClass extends MySuperClass {
-  private static final Logger LOG = LoggerFactory.getLogger(MyClass.class);
+  private static final Logger LOG = LoggerFactory.getLogger(MyClass.class.getName());
   private final static int HEADER_SIZE = 1024;
   private final ByteBuffer HEADER = ByteBuffer.allocate(HEADER_SIZE);
+  private final MyObject myObject;
   private int myInt;
 
   public MyClass() {
     super();
     myInt = 2;
+    myObject = new MyObject()
   }
 
   public MyClass(int myInt) {
@@ -167,6 +172,12 @@ public class MyClass extends MySuperClass {
     this();
     this.myInt = myInt;
     LOG.info("runnning with myInt: {}", myInt);
+  }
+}
+public class MyClass {
+  private static final MyClass INSTANCE = new MyClass();
+  public static MyClass getInstance() {
+    return INSTANCE;
   }
 }
 
