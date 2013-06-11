@@ -10,9 +10,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:12.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+=======
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:12.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:1.3.2" level="project" />
+>>>>>>> d0e475ec90108a27e704befeed2c604892f3600b
   </component>
 </module>
 

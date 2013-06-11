@@ -8,9 +8,36 @@
     <name>myapp</name>
     <properties>
         <mainClass>com.mycompany.app.App</mainClass>
+<<<<<<< HEAD
     </properties>
     <dependencies>
         <dependency>
+=======
+        <slf4jVersion>1.7.2</slf4jVersion>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+>>>>>>> d0e475ec90108a27e704befeed2c604892f3600b
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
@@ -21,5 +48,13 @@
             <artifactId>guava</artifactId>
             <version>12.0</version>
         </dependency>
+<<<<<<< HEAD
+=======
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+>>>>>>> d0e475ec90108a27e704befeed2c604892f3600b
     </dependencies>
 </project>
